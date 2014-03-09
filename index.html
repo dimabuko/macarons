@@ -707,27 +707,6 @@
         
         <a href="#" id="backtotop">↑</a>
     
-    <!-- scroll to top -->
-    
-    <script>
-    $(document).ready(function(){  
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 2000) {
-                $('#backtotop').fadeIn();
-            } else {
-                $('#backtotop').fadeOut();
-            }
-        });
-     
-        $('#backtotop').click(function () {
-            $('body,html').animate({
-                scrollTop: 0
-            }, 200);
-            return false;
-        });
-    });
-    </script>
-    
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
     (function (d, w, c) {
@@ -756,6 +735,27 @@
     
     <noscript>&lt;div&gt;&lt;img src="//mc.yandex.ru/watch/22024237" style="position:absolute; left:-9999px;" alt="" /&gt;&lt;/div&gt;</noscript>
     <!-- /Yandex.Metrika counter -->
+    
+        <!-- scroll to top -->
+    
+    <script>
+    $(document).ready(function(){  
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 1000) {
+                $('#backtotop').fadeIn();
+            } else {
+                $('#backtotop').fadeOut();
+            }
+        });
+     
+        $('#backtotop').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 200);
+            return false;
+        });
+    });
+    </script>
     
 <script src="http://postach.io/static/site/js/social-bar.min.js"></script>
 <iframe id="rdbIndicator" width="100%" height="270" border="0" src="chrome-extension://oknpjjbmpnndlpmnhmekjpocelpnlfdi/indicator.html" style="display: none; border: 0; position: fixed; left: 0; top: 0; z-index: 2147483647"></iframe><div id="window-resizer-tooltip" style="display: none;"><a href="#" title="Edit settings" style="background-image: url(chrome-extension://kkelicaakdanhinjdeammmilcgefonfh/images/icon_19.png);"></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth">1279</span> x <span class="tooltipHeight" id="winHeight">774</span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth">1279</span> x <span class="tooltipHeight" id="vpHeight">454</span></div></body></html>
