@@ -296,6 +296,30 @@
         .header {
             margin-bottom: 30px;
         }
+        
+        /* top */
+        
+        #backtotop {
+            width: 80px;
+            height: 80px;
+            margin: 0;
+            background: rgba(255,255,255,0.7);
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            color: #454599;
+            text-decoration: none;
+            font-size: 40px;
+            line-height: 70px;
+            display: none;
+            text-align: center;
+            z-index: 99;
+        }
+        
+        #backtotop:hover {
+            background: rgba(255,255,255,0.9);
+        }
     
     </style><style type="text/css" style="display: none !important;">object:not([type]),object[classid$=":D27CDB6E-AE6D-11cf-96B8-444553540000"],object[classid$=":d27cdb6e-ae6d-11cf-96b8-444553540000"],object[codebase*="swflash.cab"],object[data*=".swf"],embed[type="application/x-shockwave-flash"],embed[src*=".swf"],object[type="application/x-shockwave-flash"],object[src*=".swf"],object[codetype="application/x-shockwave-flash"],iframe[type="application/x-shockwave-flash"],object[classid$=":166B1BCA-3F9C-11CF-8075-444553540000"],object[codebase*="sw.cab"],object[data*=".dcr"],embed[type="application/x-director"],embed[src*=".dcr"],object[type="application/x-director"],object[src*=".dcr"],object[classid$=":15B782AF-55D8-11D1-B477-006097098764"],object[codebase*="awswaxf.cab"],object[data*=".aam"],embed[type="application/x-authorware-map"],embed[src*=".aam"],object[type="application/x-authorware-map"],object[src*=".aam"],object[classid*="32C73088-76AE-40F7-AC40-81F62CB2C1DA"],object[type="application/ag-plugin"],object[type="application/x-silverlight"],object[type="application/x-silverlight-2"],object[source*=".xaml"],object[sourceelement*="xaml"],embed[type="application/ag-plugin"],embed[source*=".xaml"]{display: none !important;}</style>
         
@@ -352,7 +376,7 @@
         padding: 0;
     }
     
-    div.post-content header h1 {
+    h2 {
         font-family: 'lugabookcbookc', serif;
         font-size: 48px;
         line-height: 58px;
@@ -363,7 +387,7 @@
         margin-bottom: 60px;
     }
     
-    div.post-content {
+    p {
         width: 720px;
         font-family: 'jannonregular', Times, serif;
         font-size: 20px;
@@ -677,9 +701,31 @@
                     <li><a href="http://instagram.com/p/khfpC_gD3G/" target=_"blank"><img src="http://postachio-images.s3-website-us-east-1.amazonaws.com/56a7852522aba39abf2b8d2210e8cb6b/620a1c3293b2a9357533fa20d1b9136d/w600_4a1f4d13d92b55368d41216e3f43ac0f.jpg" /></a></li>
                     <li><a href="http://instagram.com/p/kFbusJgD3l/" target=_"blank"><img src="http://postachio-images.s3-website-us-east-1.amazonaws.com/56a7852522aba39abf2b8d2210e8cb6b/620a1c3293b2a9357533fa20d1b9136d/w600_ec3d458759b8ffdf9f6ca81a7427de09.jpg" /></a></li>
                 </ul>
+                
+                <a href="#" id="backtotop">↑</a>
         
         <footer class="footer">
         </div>
+    
+    <!-- scroll to top -->
+    <script>
+    $(document).ready(function(){  
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 2000) {
+                $('#backtotop').fadeIn();
+            } else {
+                $('#backtotop').fadeOut();
+            }
+        });
+     
+        $('#backtotop').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 200);
+            return false;
+        });
+    });
+    </script>
     
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
