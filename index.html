@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<title>Макаронс Lililoveme</title>
+	<meta name="author" content="Natali Mintwave" />
+	<meta name="description" content="" />
+	<meta name="keywords"  content="" />
+	<meta name="Resource-type" content="Document" />
+
+	
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+    
+	<style>
+        
+    @font-face {
+            font-family: 'playfair';
+            src: url('fonts/playfair.woff');
+            font-weight:normal;
+            }  
+	
+	.section{
+		text-align:center;
+	}
+	
+	#section1,
+	#section2,
+	#section3,
+	#section4,
+    #section5,
+	#section6,       
+    #section7,
+	#section8,
+	#section9,
+	#section10,
+	#section11{
+		background-size: cover;
+	}
+	
+	#section1{
+		background-image: url(imgs/bg1.jpg);
+		padding: 0 0 0 0;
+	}
+	#section2{
+		background-image: url(imgs/bg2.jpg);
+		padding: 0 0 0 0;
+	}
+	#section3{
+		background-image: url(imgs/bg3.jpg);
+		padding: 0 0 0 0;
+	}
+    #section4{
+		background-image: url(imgs/bg4.jpg);
+	}
+    #section5{
+		background-image: url(imgs/bg5.jpg);
+	}
+    #section6{
+		background-image: url(imgs/bg6.jpg);
+	}
+    #section6{
+		background-image: url(imgs/bg6.jpg);
+	}
+    #section7{
+		background-image: url(imgs/bg7.jpg);
+	}
+    #section8{
+		background-image: url(imgs/bg8.jpg);
+	}
+    #section9{
+		background-image: url(imgs/bg9.jpg);
+	}
+    #section10{
+		background-image: url(imgs/bg10.jpg);
+	}
+    #section11{
+		background-image: url(imgs/bg11.jpg);
+	}
+
+    #info{
+    
+    }
+    
+    .q, .a, .break {
+        font-family:'playfair';
+        font-size:17px;
+        color: #000;
+    }
+    
+    .q {
+        color: #feacb1;
+    }
+        
+	#header{
+		position:fixed;
+		height: 50px;
+		display:block;
+		width: 100%;
+		z-index:9;
+		text-align:center;
+		color: #f2f2f2;
+		padding: 0;
+	}
+	
+	#header{
+		top:20px;
+	}
+    
+    .logo{
+        width:183px;
+        height:62px;
+        background-image:url(imgs/logo.svg);
+        margin:0 auto;
+        margin-bottom:20px;
+    }
+        
+    .logo:hover{
+        opacity:0.7;        
+    }
+    
+    .link{
+         font-family:'playfair';
+         font-size:17px;
+         color: #abe0f3;
+         border-bottom: 1px solid rgba(171,224,243, .3);
+    }
+        
+    .link:hover{
+        border-bottom-color: rgba(171,224,243, 1);
+        transition:0.2s;
+    }
+        
+	.fullPage-tooltip{
+		color: #abe0f3;
+        font-family:'playfair';
+        line-height:15px;
+	}
+	#fullPage-nav span, .fullPage-slidesNav span{
+		border-color: rgba(171,224,243, .5);
+	}
+    #fullPage-nav span:hover, .fullPage-slidesNav span:hover{
+		border-color: rgba(171,224,243, 1);
+        transition:0.2s;
+	}
+	#fullPage-nav li .active span, .fullPage-slidesNav .active span{
+		background: #abe0f3;
+	}
+	
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>	
+	
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+                verticalCentered: true,
+                scrollingSpeed: 600,
+                easing: 'easeInQuart',
+                navigation: true,
+                css3: true,
+                navigationTooltips: ['Красивые', 'Цветные', 'Ровные', 'Нежные', 'Вкусные', 'Сладкие', 'Яркие', 'Сочные', 'Разные', 'Чёткие', 'Свежие', 'Вопросы', 'Доставка' ],
+                anchors:['krasivye', 'cvetnie', 'rovnie', 'nezhnie', 'vkusnie', 'sladkie', 'yarkie', 'sochnie', 'raznie', 'chetkie', 'svezhie', 'voprosy', 'dostavka'],
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+<div id="header">
+<a href="#krasivye"><div class="logo"></div></a>
+<a href="buy/" class="link">Заказать</a>
+<a href="subscribe/" class="link" style="margin-left:30px;">Подписаться на макаронс</a>
+<a href="#voprosy" class="link" style="margin-left:30px;">Вопросы</a>
+<a href="#dostavka" class="link" style="margin-left:30px;">Доставка</a>
+</div>
+
+<div id="fullpage">
+	<div class="section " id="section1"></div>
+	<div class="section" id="section2"></div>
+	<div class="section" id="section3"></div>
+    <div class="section" id="section4"></div>
+    <div class="section" id="section5"></div>
+    <div class="section" id="section6"></div>
+    <div class="section" id="section7"></div>
+    <div class="section" id="section8"></div>
+    <div class="section" id="section9"></div>
+    <div class="section" id="section10"></div>
+    <div class="section" id="section11"></div>
+    <div class="section" id="info1">
+    <p class="q">25 $ — это сколько макарон?</p>
+    <p class="a">В коробочке 300 грамм, это 7 больших макарон.</p>
+        <p class="break">—</p>
+    <p class="q">Сколько ждать, если не заказывать к конкретной дате?</p>
+    <p class="a">Обычно, у нас расписано всё на одну-две недели вперёд: будьте готовы подождать одну-две недели. </p>
+        <p class="break">—</p>
+    <p class="q">Можно ли выбирать вкусы?</p>
+    <p class="a">Нет. Можно заказать ассорти, либо указать один конкретный вкус.</p>
+            <p class="break">—</p>
+    <p class="q">Какие бывают вкусы?</p>
+    <p class="a">Арахис, кофе, карамель, мята, лимон, вишня, красная смородина, шоколадная вишня. Что-то новенькое — каждую неделю.</p>
+            <p class="break">—</p>
+    <p class="q">Сколько можно хранить макаронс?</p>
+    <p class="a">В холодильнике до 5 дней.</p>
+    </div>
+    <div class="section" id="info2">
+    <p class="q">Как забрать макаронс?</p>
+    <p class="a">Забрать можно недалеко от Востока или Фрунзенской. Адрес, карту и время мы вышлем в первом письме.</p>
+        <p class="break">—</p>
+    <p class="q">Есть ли у вас доставка?</p>
+    <p class="a">Нет, вы должны забрать макаронс сами. Доставка только каждое субботнее утро при <a href="subscribe/" class="link">подписке на макаронс</a>.</p> 
+        <p class="break">—</p>
+    <p class="q">Можно ли заказать в Москву, Питер, Ригу?</p>
+    <p class="a">Нет, Минск онли.</p>
+        <br /><br /><br />
+    <a href="mailto:jokleen@gmail.com" class="link">Спросите нас что-нибудь</a>
+        <p class="break"></p>
+    </div>
+</div>
+
+</body>
+</html>
