@@ -37,7 +37,7 @@
 	#section10,
 	#section11{
 		background-size: cover;
-        background-position:center;
+        background-position:center top;
 	}
 	
 	#section1{
@@ -148,6 +148,21 @@
 	#fullPage-nav li .active span, .fullPage-slidesNav .active span{
 		background: #abe0f3;
 	}
+        
+    @media only screen and (min-width : 320px) and (max-width : 568px)
+        { 
+          .logo {
+                background-image: url(imgs/logo.svg);
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+        .link {
+                font-size:27px;
+            }
+        #fullPage-nav{
+                display:none;
+            }
+        }
 	
 	</style>
 
@@ -183,7 +198,7 @@
 <div id="header">
 <a href="#krasivye"><div class="logo"></div></a>
 <a href="buy/" class="link">Заказать</a>
-<a href="subscribe/" class="link" style="margin-left:30px;">Подписаться на макаронс</a>
+<a href="subscribe/" class="link" style="margin-left:30px;">Подписаться&nbsp;на&nbsp;макаронс</a>
 <a href="#voprosy" class="link" style="margin-left:30px;">Вопросы</a>
 <a href="#dostavka" class="link" style="margin-left:30px;">Доставка</a>
 </div>
