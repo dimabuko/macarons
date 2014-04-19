@@ -25,6 +25,17 @@
 		text-align:center;
 	}
 
+    @font-face {
+            font-family: 'propisi';
+            src: url('fonts/propisi.woff');
+            font-weight:normal;
+            -webkit-font-smoothing: antialiased;
+            }
+
+    .section{
+        text-align:center;
+    }
+
 	#section1,
 	#section2,
 	#section3,
@@ -45,7 +56,7 @@
 
 	#section1{
 		background-image: url(imgs/bg1.jpg);
-		padding: 0 0 0 0;
+		padding: 10em 0 0 0;
 	}
     #section-story{
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imgs/bg-story.jpg);
@@ -107,6 +118,17 @@
 
     .q {
         color: #feacb1;
+    }
+
+    .h1-1 {
+        font-family: 'propisi';
+        display: block;
+        position: absolute;
+        left: 58%;
+        bottom: 30%;
+        text-align: left;
+        color: #39e5cf;
+        line-height: 0.95em;
     }
 
 	#header{
@@ -225,7 +247,7 @@
 </div>
 
 <div id="fullpage">
-	<div class="section " id="section1"></div>
+	<div class="section " id="section1"><h1 class="h1-1">7 пироженок<br />ассорти<br />ручной работы</h1></div>
     <div class="section" id="section-story">
         <p class="a" style="color:#fff;">
             Как всё началось
