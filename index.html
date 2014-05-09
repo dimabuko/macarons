@@ -103,6 +103,9 @@
     #section13{
 		background-image: url(imgs/bg13.jpg);
 	}
+    #section15{
+        background-image: url(imgs/bg15.jpg);
+    }
 
     #info2{
         background-color:#fff;
@@ -214,6 +217,43 @@
 		background: #00aaff;
 	}
 
+    .calltoaction {
+        display: block;
+        width: auto;
+        max-width: 700px;
+        border-radius: 120px;
+        height: 120px;
+        background-color: #4b8cf7;
+        background-image: linear-gradient(to bottom, #4d90fe, #4787ed);
+        background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4d90fe), to(#4787ed));
+        margin: 0 auto;
+        font-family: 'propisi';
+        font-size: 5em;
+        line-height: 135px;
+        color: #fff;
+        box-sizing: border-box;
+        border: 1px solid #3079ed;
+    }
+
+    .calltoaction:hover {
+        border: 1px solid #196aeb;
+        background-image: linear-gradient(to bottom, #4d90fe, #3078eb);
+        background-color: #3078eb;
+        -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        color: #fff;
+    }
+
+    .calltoaction:active {
+        border: 1px solid #135fd7;
+        background-color: #3880f5;
+        background-image: linear-gradient(to bottom, #4d90fe, #1969e8);
+        -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
     @media only screen and (min-device-width : 320px) and (max-device-width : 568px)
         {
           .logo {
@@ -257,8 +297,8 @@
                 navigation: true,
                 autoScrolling: false,
                 css3: true,
-                navigationTooltips: ['Коробка', 'История', 'Цена', 'Цвета', 'Вкусы', 'Отзывы', 'Омном', 'Кухня', 'Трёха', 'Сок', 'Коробки', 'Чёткие', 'Я', 'Вопросы', 'Доставка', 'Лайв', 'Лайк!' ],
-                anchors: ['korobka', 'story', 'price', 'colors', 'tastes', 'otzyvy', 'omnom', 'kuhnya', 'treha', 'sok', 'korobki', 'chetkie', 'eto-ya', 'voprosy', 'dostavka', 'live', 'facebook' ],
+                navigationTooltips: ['Коробка', 'История', 'Цена', 'Цвета', 'Вкусы', 'Отзывы', 'Омном', 'Кухня', 'Трёха', 'Сок', 'Коробки', 'Чёткие', 'Я', 'Вопросы', 'Доставка', 'Лайв', 'Лайк!', 'Заказать' ],
+                anchors: ['korobka', 'story', 'price', 'colors', 'tastes', 'otzyvy', 'omnom', 'kuhnya', 'treha', 'sok', 'korobki', 'chetkie', 'eto-ya', 'voprosy', 'dostavka', 'live', 'facebook', 'buy' ],
 			});
 		});
 	</script>
@@ -354,6 +394,7 @@
     <div class="section" id="section14">
         <div class="fb-like-box" data-href="https://www.facebook.com/lililovemeby" data-width="920" data-height="580" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="false"></div>
     </div>
+    <div class="section" id="section15"><a href="buy/" class="calltoaction">Уииии! Заказать!</a></div>
 </div>
 
 <!-- Yandex.Metrika counter -->
